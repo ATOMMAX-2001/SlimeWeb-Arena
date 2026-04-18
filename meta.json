@@ -13,10 +13,11 @@
     "json",
     "json-comp",
     "upload",
+    "echo-ws",
     "api-4",
     "api-16",
     "static",
-    "async-db",
+    "async-db"
   ],
-   "maintainers": ["ATOMMAX-2001"]
+  "maintainers": ["ATOMMAX-2001"]
 }
