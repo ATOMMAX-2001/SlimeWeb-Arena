@@ -11,10 +11,9 @@ def load_json_processing_file():
         return json.load(file)
 
 
-
-
-
 JSON_DATASET = load_json_processing_file()
+
+
 
 
 @app.route("/baseline11",method=["GET","POST"])
@@ -42,11 +41,14 @@ def baseline_test(req,resp):
 def pipeline_test(req,resp):
     return resp.plain("ok")
 
-
+# body_size by default it will read 10MB
+# setting read_size as 25MB
 @app.route("/upload",method="POST",body_size=1024*1024*25)
 def upload_test(req,resp):
     result = len(req.body)
     return resp.plain(str(result))
+
+
 
 @app.route("/json/{count}",method="GET",compression=SlimeCompression.Gzip,comp_level=1)
 def json_test(req,resp):
@@ -72,6 +74,14 @@ def json_test(req,resp):
         })
     return resp.json({"items":result,"count":count})
 
+
+# Websocket in slime are event driven so had to create handler 
+# message event
+@app.websocket("/ws")
+def websocket_test(req,resp):
+    def echo_me(msg):
+        resp.send(msg)
+    resp.on_message(echo_me)
 
 
 

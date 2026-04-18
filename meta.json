@@ -10,16 +10,13 @@
     "baseline",
     "pipelined",
     "limited-conn",
-    "noisy",
-    "tcp-frag",
-    "upload",
-    "static",
     "json",
-    "compression",
-    "mixed",
+    "json-comp",
+    "upload",
     "api-4",
     "api-16",
+    "static",
     "async-db",
-    "sync-db",
-  ]
+  ],
+   "maintainers": ["ATOMMAX-2001"]
 }
