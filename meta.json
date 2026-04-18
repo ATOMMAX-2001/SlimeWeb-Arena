@@ -1,0 +1,25 @@
+{
+  "display_name": "SlimeWeb",
+  "language": "Python",
+  "type": "tuned",
+  "engine": "hyper",
+  "description": "SlimeWeb is a fast lightweight framework for python powered by rust",
+  "repo": "https://github.com/ATOMMAX-2001/Slime/",
+  "enabled": true,
+  "tests": [
+    "baseline",
+    "pipelined",
+    "limited-conn",
+    "noisy",
+    "tcp-frag",
+    "upload",
+    "static",
+    "json",
+    "compression",
+    "mixed",
+    "api-4",
+    "api-16",
+    "async-db",
+    "sync-db",
+  ]
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "Alpha Widget 1",
+    "category": "electronics",
+    "price": 301,
+    "quantity": 6,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 7, "count": 63 }
+  },
+  {
+    "id": 2,
+    "name": "Alpha Widget 2",
+    "category": "electronics",
+    "price": 302,
+    "quantity": 7,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 14, "count": 76 }
+  },
+  {
+    "id": 3,
+    "name": "Alpha Widget 3",
+    "category": "electronics",
+    "price": 303,
+    "quantity": 8,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 21, "count": 89 }
+  },
+  {
+    "id": 4,
+    "name": "Alpha Widget 4",
+    "category": "electronics",
+    "price": 304,
+    "quantity": 9,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 28, "count": 102 }
+  },
+  {
+    "id": 5,
+    "name": "Alpha Widget 5",
+    "category": "electronics",
+    "price": 305,
+    "quantity": 10,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 35, "count": 115 }
+  },
+  {
+    "id": 6,
+    "name": "Alpha Widget 6",
+    "category": "electronics",
+    "price": 306,
+    "quantity": 11,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 42, "count": 128 }
+  },
+  {
+    "id": 7,
+    "name": "Alpha Widget 7",
+    "category": "electronics",
+    "price": 307,
+    "quantity": 12,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 49, "count": 141 }
+  },
+  {
+    "id": 8,
+    "name": "Alpha Widget 8",
+    "category": "electronics",
+    "price": 308,
+    "quantity": 13,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 6, "count": 154 }
+  },
+  {
+    "id": 9,
+    "name": "Alpha Widget 9",
+    "category": "electronics",
+    "price": 309,
+    "quantity": 14,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 13, "count": 167 }
+  },
+  {
+    "id": 10,
+    "name": "Alpha Widget 10",
+    "category": "electronics",
+    "price": 310,
+    "quantity": 15,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 20, "count": 180 }
+  },
+  {
+    "id": 11,
+    "name": "Alpha Widget 11",
+    "category": "electronics",
+    "price": 311,
+    "quantity": 16,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 27, "count": 193 }
+  },
+  {
+    "id": 12,
+    "name": "Alpha Widget 12",
+    "category": "electronics",
+    "price": 312,
+    "quantity": 17,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 34, "count": 206 }
+  },
+  {
+    "id": 13,
+    "name": "Alpha Widget 13",
+    "category": "electronics",
+    "price": 313,
+    "quantity": 18,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 41, "count": 219 }
+  },
+  {
+    "id": 14,
+    "name": "Alpha Widget 14",
+    "category": "electronics",
+    "price": 314,
+    "quantity": 19,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 48, "count": 232 }
+  },
+  {
+    "id": 15,
+    "name": "Alpha Widget 15",
+    "category": "electronics",
+    "price": 315,
+    "quantity": 20,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 5, "count": 245 }
+  },
+  {
+    "id": 16,
+    "name": "Alpha Widget 16",
+    "category": "electronics",
+    "price": 316,
+    "quantity": 21,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 12, "count": 258 }
+  },
+  {
+    "id": 17,
+    "name": "Alpha Widget 17",
+    "category": "electronics",
+    "price": 317,
+    "quantity": 22,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 19, "count": 271 }
+  },
+  {
+    "id": 18,
+    "name": "Alpha Widget 18",
+    "category": "electronics",
+    "price": 318,
+    "quantity": 23,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 26, "count": 284 }
+  },
+  {
+    "id": 19,
+    "name": "Alpha Widget 19",
+    "category": "electronics",
+    "price": 319,
+    "quantity": 24,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 33, "count": 297 }
+  },
+  {
+    "id": 20,
+    "name": "Alpha Widget 20",
+    "category": "electronics",
+    "price": 320,
+    "quantity": 25,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 40, "count": 310 }
+  },
+  {
+    "id": 21,
+    "name": "Alpha Widget 21",
+    "category": "electronics",
+    "price": 321,
+    "quantity": 26,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 47, "count": 323 }
+  },
+  {
+    "id": 22,
+    "name": "Alpha Widget 22",
+    "category": "electronics",
+    "price": 322,
+    "quantity": 27,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 4, "count": 336 }
+  },
+  {
+    "id": 23,
+    "name": "Alpha Widget 23",
+    "category": "electronics",
+    "price": 323,
+    "quantity": 28,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 11, "count": 349 }
+  },
+  {
+    "id": 24,
+    "name": "Alpha Widget 24",
+    "category": "electronics",
+    "price": 324,
+    "quantity": 29,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 18, "count": 362 }
+  },
+  {
+    "id": 25,
+    "name": "Alpha Widget 25",
+    "category": "electronics",
+    "price": 325,
+    "quantity": 30,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 25, "count": 375 }
+  },
+  {
+    "id": 26,
+    "name": "Alpha Widget 26",
+    "category": "electronics",
+    "price": 326,
+    "quantity": 31,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 32, "count": 388 }
+  },
+  {
+    "id": 27,
+    "name": "Alpha Widget 27",
+    "category": "electronics",
+    "price": 327,
+    "quantity": 32,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 39, "count": 401 }
+  },
+  {
+    "id": 28,
+    "name": "Alpha Widget 28",
+    "category": "electronics",
+    "price": 328,
+    "quantity": 33,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 46, "count": 414 }
+  },
+  {
+    "id": 29,
+    "name": "Alpha Widget 29",
+    "category": "electronics",
+    "price": 329,
+    "quantity": 34,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 3, "count": 427 }
+  },
+  {
+    "id": 30,
+    "name": "Alpha Widget 30",
+    "category": "electronics",
+    "price": 330,
+    "quantity": 35,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 10, "count": 440 }
+  },
+  {
+    "id": 31,
+    "name": "Alpha Widget 31",
+    "category": "electronics",
+    "price": 331,
+    "quantity": 36,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 17, "count": 453 }
+  },
+  {
+    "id": 32,
+    "name": "Alpha Widget 32",
+    "category": "electronics",
+    "price": 332,
+    "quantity": 37,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 24, "count": 466 }
+  },
+  {
+    "id": 33,
+    "name": "Alpha Widget 33",
+    "category": "electronics",
+    "price": 333,
+    "quantity": 38,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 31, "count": 479 }
+  },
+  {
+    "id": 34,
+    "name": "Alpha Widget 34",
+    "category": "electronics",
+    "price": 334,
+    "quantity": 39,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 38, "count": 492 }
+  },
+  {
+    "id": 35,
+    "name": "Alpha Widget 35",
+    "category": "electronics",
+    "price": 335,
+    "quantity": 40,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 45, "count": 505 }
+  },
+  {
+    "id": 36,
+    "name": "Alpha Widget 36",
+    "category": "electronics",
+    "price": 336,
+    "quantity": 41,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 2, "count": 518 }
+  },
+  {
+    "id": 37,
+    "name": "Alpha Widget 37",
+    "category": "electronics",
+    "price": 337,
+    "quantity": 42,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 9, "count": 531 }
+  },
+  {
+    "id": 38,
+    "name": "Alpha Widget 38",
+    "category": "electronics",
+    "price": 338,
+    "quantity": 43,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 16, "count": 544 }
+  },
+  {
+    "id": 39,
+    "name": "Alpha Widget 39",
+    "category": "electronics",
+    "price": 339,
+    "quantity": 44,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 23, "count": 557 }
+  },
+  {
+    "id": 40,
+    "name": "Alpha Widget 40",
+    "category": "electronics",
+    "price": 340,
+    "quantity": 45,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 30, "count": 570 }
+  },
+  {
+    "id": 41,
+    "name": "Alpha Widget 41",
+    "category": "electronics",
+    "price": 341,
+    "quantity": 46,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 37, "count": 583 }
+  },
+  {
+    "id": 42,
+    "name": "Alpha Widget 42",
+    "category": "electronics",
+    "price": 342,
+    "quantity": 47,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 44, "count": 596 }
+  },
+  {
+    "id": 43,
+    "name": "Alpha Widget 43",
+    "category": "electronics",
+    "price": 343,
+    "quantity": 48,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 1, "count": 609 }
+  },
+  {
+    "id": 44,
+    "name": "Alpha Widget 44",
+    "category": "electronics",
+    "price": 344,
+    "quantity": 49,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 8, "count": 622 }
+  },
+  {
+    "id": 45,
+    "name": "Alpha Widget 45",
+    "category": "electronics",
+    "price": 345,
+    "quantity": 50,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 15, "count": 635 }
+  },
+  {
+    "id": 46,
+    "name": "Alpha Widget 46",
+    "category": "electronics",
+    "price": 346,
+    "quantity": 51,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 22, "count": 648 }
+  },
+  {
+    "id": 47,
+    "name": "Alpha Widget 47",
+    "category": "electronics",
+    "price": 347,
+    "quantity": 52,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 29, "count": 661 }
+  },
+  {
+    "id": 48,
+    "name": "Alpha Widget 48",
+    "category": "electronics",
+    "price": 348,
+    "quantity": 53,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 36, "count": 674 }
+  },
+  {
+    "id": 49,
+    "name": "Alpha Widget 49",
+    "category": "electronics",
+    "price": 349,
+    "quantity": 54,
+    "active": false,
+    "tags": ["fast", "new"],
+    "rating": { "score": 43, "count": 687 }
+  },
+  {
+    "id": 50,
+    "name": "Alpha Widget 50",
+    "category": "electronics",
+    "price": 350,
+    "quantity": 55,
+    "active": true,
+    "tags": ["fast", "new"],
+    "rating": { "score": 50, "count": 700 }
+  }
+]
