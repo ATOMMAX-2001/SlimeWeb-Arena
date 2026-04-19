@@ -108,16 +108,16 @@ wheels = [
 
 [[package]]
 name = "slimeweb"
-version = "0.2.0"
+version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pydantic" },
     { name = "uvloop", marker = "sys_platform == 'linux'" },
     { name = "watchdog" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cc/eb/0986080bc45ca8d8ffd3d06c35fa18e1e8aa8e64ae19eb956fd8fa343e98/slimeweb-0.2.0.tar.gz", hash = "sha256:25fc6999b9dcac38f1f58064d327da37e949183979b2f454afd7ea2703d891de", size = 5493307, upload-time = "2026-04-15T19:00:33.174Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/4e/3f5c3cb86e19ac95be0d5de4a2dbb11c023d621c08c2c37fa29bfa8bf2ef/slimeweb-0.2.1.tar.gz", hash = "sha256:d8e5a00fb1b12bac41532747ef6c6021968fbfcda48d9bdc0d4a0f1fee4d81c2", size = 5492016, upload-time = "2026-04-19T18:43:47.452Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/39/c5/daef815eb4f1578c2ad9b45633e03236089980d499ccad2fa1b5cbe94585/slimeweb-0.2.0-py3-none-any.whl", hash = "sha256:f71bad1e074116866ed3556ed591a531369631b683388608c31cc63e41e9e69d", size = 5520050, upload-time = "2026-04-15T19:00:28.301Z" },
+    { url = "https://files.pythonhosted.org/packages/be/0e/af7d557e65f0fd13a7c1951b56c567cc976f44bb50b053bfcb8f7c65fc8b/slimeweb-0.2.1-py3-none-any.whl", hash = "sha256:37526557ac72a95dd79daf0b6b25fd83e10e31b11f72991eb455a30a3c6ec5f7", size = 5517195, upload-time = "2026-04-19T18:43:43.521Z" },
 ]
 
 [[package]]

@@ -2,8 +2,7 @@ import json
 import os
 
 import asyncpg as pg
-from slimeweb import Slime
-from slimeweb.slime import SlimeCompression
+from slimeweb import Slime, SlimeCompression
 
 app = Slime(__file__)
 
@@ -61,7 +60,7 @@ def upload_test(req, resp):
 
 
 @app.route(
-    "/json/{count}", method="GET", compression=SlimeCompression.Gzip, comp_level=1
+    "/json/{count}", method="GET", compression=SlimeCompression.All, comp_level=1
 )
 def json_test(req, resp):
     global JSON_DATASET
@@ -97,16 +96,6 @@ def websocket_test(req, resp):
     resp.on_message(echo_me)
 
 
-async def get_pool():
-    global DB_POOL
-    DB_POOL = await pg.create_pool(
-        dsn=os.environ["DATABASE_URL"],
-        min_size=5,
-        max_size=int(os.environ.get("DATABASE_MAX_CONN", 256)),
-    )
-    print("Pool is created successfully")
-
-
 @app.route("/async-db", method="GET")
 async def async_db_test(req, resp):
     global QUERY_STMT, DB_POOL
@@ -115,8 +104,6 @@ async def async_db_test(req, resp):
     limit = int(req.query["limit"])
     result = []
     data_result = None
-    if DB_POOL is None:
-        await get_pool()
     async with DB_POOL.acquire() as conn:
         data_result = await conn.fetch(QUERY_STMT, min, max, limit)
     for data in data_result:
@@ -138,5 +125,16 @@ async def async_db_test(req, resp):
     return resp.json({"items": result, "count": len(result)})
 
 
+@app.start()
+async def init():
+    global DB_POOL
+    DB_POOL = await pg.create_pool(
+        dsn=os.environ["DATABASE_URL"],
+        min_size=5,
+        max_size=int(os.environ.get("DATABASE_MAX_CONN", 256)),
+    )
+    print("Pool is created successfully")
+
+
 if __name__ == "__main__":
-    app.serve()
+    app.serve(port=8080)
