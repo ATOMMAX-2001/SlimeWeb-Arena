@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "asyncpg>=0.31.0",
-    "slimeweb>=0.2.0",
+    "slimeweb>=0.2.3",
 ]

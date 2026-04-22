@@ -2,7 +2,7 @@ import json
 import os
 
 import asyncpg as pg
-from slimeweb import Slime, SlimeCompression
+from slimeweb import Slime, SlimeCompression, SlimeTls
 
 app = Slime(__file__)
 
@@ -24,26 +24,18 @@ DB_POOL = None
 
 @app.route("/baseline11", method=["GET", "POST"])
 def baseline_test(req, resp):
-    if req.method == "GET":
-        result = 0
-        for q_val in req.query.values():
-            try:
-                result += int(q_val)
-            except ValueError:
-                pass
-        return resp.plain(str(result))
-    else:
-        result = 0
-        for q_val in req.query.values():
-            try:
-                result += int(q_val)
-            except ValueError:
-                pass
+    result = 0
+    for q_val in req.query.values():
+        try:
+            result += int(q_val)
+        except ValueError:
+            pass
+    if req.method == "POST":
         try:
             result += int(req.text)
         except ValueError:
             pass
-        return resp.plain(str(result))
+    return resp.plain(str(result))
 
 
 @app.route("/pipeline", method="GET")
@@ -67,6 +59,7 @@ def json_test(req, resp):
     count = int(req.params["count"])
     multiplier = int(req.query["m"])
     result = []
+
     for data in JSON_DATASET[:count]:
         result.append(
             {
@@ -109,8 +102,7 @@ async def async_db_test(req, resp):
     limit = int(req.query["limit"])
     result = []
     data_result = None
-    async with DB_POOL.acquire() as conn:
-        data_result = await conn.fetch(QUERY_STMT, min, max, limit)
+    data_result = await DB_POOL.fetch(QUERY_STMT, min, max, limit)
     for data in data_result:
         result.append(
             {
@@ -130,6 +122,13 @@ async def async_db_test(req, resp):
     return resp.json({"items": result, "count": len(result)})
 
 
+class NoResetConnection(pg.Connection):
+    __slots__ = ()
+
+    def get_reset_query(self):
+        return ""
+
+
 @app.start()
 async def init():
     global DB_POOL
@@ -138,6 +137,7 @@ async def init():
             dsn=os.environ["DATABASE_URL"],
             min_size=5,
             max_size=int(os.environ.get("DATABASE_MAX_CONN", 256)),
+            connection_class=NoResetConnection,
         )
         print("Pool is created successfully")
     except Exception as e:
@@ -146,4 +146,9 @@ async def init():
 
 
 if __name__ == "__main__":
-    app.serve(host="0.0.0.0", port=8080, static_path="/data/static")
+    app.serve(
+        host="0.0.0.0",
+        port=8080,
+        static_path="/data/static",
+        # ,https=SlimeTls(cert="../Slime/certs/localhost+1.pem",key="../Slime/certs/localhost+1-key.pem")
+    )
