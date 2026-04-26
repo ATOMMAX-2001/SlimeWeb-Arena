@@ -1,0 +1,13 @@
+{
+    layer4 {
+        :8080 {
+            route {
+                proxy {
+                    upstream :3000
+                    upstream :3001
+                    upstream :3002
+                }
+            }
+        }
+    }
+}

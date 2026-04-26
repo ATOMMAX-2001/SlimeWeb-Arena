@@ -38,9 +38,25 @@ def baseline_test(req, resp):
     return resp.plain(str(result))
 
 
-@app.route("/pipeline", method="GET")
-def pipeline_test(req, resp):
-    return resp.plain("ok")
+@app.route("/baseline2", method=["GET", "POST"])
+def baseline_test2(req, resp):
+    result = 0
+    for q_val in req.query.values():
+        try:
+            result += int(q_val)
+        except ValueError:
+            pass
+    if req.method == "POST":
+        try:
+            result += int(req.text)
+        except ValueError:
+            pass
+    return resp.plain(str(result))
+
+
+@app.static_route("/pipeline", method="GET")
+def pipeline_test():
+    return "ok"
 
 
 # body_size by default it will read 10MB
@@ -148,7 +164,11 @@ async def init():
 if __name__ == "__main__":
     app.serve(
         host="0.0.0.0",
-        port=8080,
+        port=8443,
         static_path="/data/static",
-        # ,https=SlimeTls(cert="../Slime/certs/localhost+1.pem",key="../Slime/certs/localhost+1-key.pem")
+        # workers=1,
+        https=SlimeTls(
+            cert="../Slime/certs/localhost+1.cert",
+            key="../Slime/certs/localhost+1-key.key",
+        ),
     )
